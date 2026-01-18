@@ -26,6 +26,8 @@ app.post("/messages", async (req, res) => {
   res.status(201).json(message);
 });
 
-app.listen(5000, () => {
-  console.log("Server running on http://localhost:5000");
+const PORT = 5050;
+
+app.listen(PORT, () => {
+  console.log(`Server running on http://localhost:${PORT}`);
 });
